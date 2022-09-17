@@ -10,6 +10,7 @@ const productRoute = require("./routes/products");
 
 app.use("/", productRoute);
 
+const PORT = process.env.Port || 3000;
 app.listen(3000, () => {
   console.log("server running at port 3000");
 });
